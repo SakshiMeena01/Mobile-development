@@ -129,11 +129,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                           TextFormField(
                             decoration: const InputDecoration(
-<<<<<<< HEAD
                               labelText: 'Address',
-=======
-                              labelText: 'Sakshi_Email Address',
->>>>>>> 1cb07eec7bff56aa838a27398bae64c9892a7b2a
                             ),
                             keyboardType: TextInputType.emailAddress,
                             autocorrect: false,
