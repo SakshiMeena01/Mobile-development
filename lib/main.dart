@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:mychat_app/Searchpage/Tags_page.dart';
+import 'package:mychat_app/Searchpage/feed_page.dart';
 import 'package:mychat_app/screens/auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:mychat_app/screens/splash.dart';
@@ -19,6 +21,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/feed_page',
+      debugShowCheckedModeBanner: false,
         title: 'FlutterChat',
         theme: ThemeData().copyWith(
           useMaterial3: true,
@@ -33,7 +37,14 @@ class App extends StatelessWidget {
             return const ChatScreen();
           }
           return const AuthScreen();
-        }),
+        },
+        ),
+          //sajal page connections
+
+      routes: {
+    '/Tags_page': (context) => Tags_page(),
+    '/feed_page': (context) => feed_page(),
+    },
     );
+    }
   }
-}
