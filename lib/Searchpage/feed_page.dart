@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mychat_app/Searchpage/Tags_page.dart';
+<<<<<<< HEAD
 import 'package:mychat_app/accountpage/account_Page.dart';
+=======
+import 'package:mychat_app/Searchpage/account_Page.dart';
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
 import 'package:mychat_app/Searchpage/chatPage.dart';
 import 'package:mychat_app/Searchpage/upload_Page.dart';
 
@@ -18,10 +22,17 @@ class feed_page extends StatelessWidget {
         'hashtags': ['#urbanluxe', '#sleevedrama', '#newloooks'],
       },
       {
+<<<<<<< HEAD
         'userName': 'Sakshi sood',
         'userLogo': 'assets/images/ae9.png',
         'contentImage': 'assets/images/ae7.jpg',
         'hashtags': ['#Wardrobe goals', '#sleevedrama', '#chick looks'],
+=======
+        'userName': 'Sakshi Meena',
+        'userLogo': 'assets/images/ae11.png',
+        'contentImage': 'assets/images/ae5.jpg',
+        'hashtags': ['#urbanluxe', '#sleevedrama', '#newloooks'],
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
       },
       // Add more user content items here
     ];
@@ -33,7 +44,11 @@ class feed_page extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: Icon(
+<<<<<<< HEAD
               Icons.settings,
+=======
+              Icons.favorite,
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
               color: Colors.white,
               size: 32,
             ),
@@ -121,6 +136,7 @@ class feed_page extends StatelessWidget {
             ),
             title: Text(content['userName']),
           ),
+<<<<<<< HEAD
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Center(
@@ -128,11 +144,15 @@ class feed_page extends StatelessWidget {
             ),
           ),
 
+=======
+          Image.asset(content['contentImage']),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Wrap(
               spacing: 8.0,
               children: (content['hashtags'] as List<String>)
+<<<<<<< HEAD
                   .map(
                     (tag) => Chip(
                   label: Text(tag),
@@ -149,30 +169,51 @@ class feed_page extends StatelessWidget {
                   .toList(),
             ),
 
+=======
+                  .map((tag) => Chip(label: Text(tag)))
+                  .toList(),
+            ),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
           ),
           ButtonBar(
             alignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconButton(
+<<<<<<< HEAD
                 icon: Icon(Icons.favorite,color:Color(0xff5D3587) ,),
+=======
+                icon: Icon(Icons.favorite,color: Colors.pink,),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
                 onPressed: () {
                   // Handle like button pressed
                 },
               ),
               IconButton(
+<<<<<<< HEAD
                 icon: Icon(Icons.comment,color: Color(0xff5D3587),),
+=======
+                icon: Icon(Icons.comment,color: Colors.pink,),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
                 onPressed: () {
                   // Handle comment button pressed
                 },
               ),
               IconButton(
+<<<<<<< HEAD
                 icon: Icon(Icons.share,color: Color(0xff5D3587),),
+=======
+                icon: Icon(Icons.share,color: Colors.pink,),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
                 onPressed: () {
                   // Handle share button pressed
                 },
               ),
               IconButton(
+<<<<<<< HEAD
                 icon: Icon(Icons.monetization_on,color: Color(0xff5D3587),),
+=======
+                icon: Icon(Icons.monetization_on,color: Colors.pink,),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
                 onPressed: () {
                   // Handle gift or money button pressed
                 },

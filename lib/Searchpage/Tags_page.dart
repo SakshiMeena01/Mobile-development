@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:mychat_app/Searchpage/chatPage.dart';
 import 'package:mychat_app/Searchpage/feed_page.dart';
+<<<<<<< HEAD
 import 'package:mychat_app/accountpage/account_Page.dart';
 import 'package:mychat_app/Searchpage/upload_Page.dart';
 
 
+=======
+import 'package:mychat_app/Searchpage/account_Page.dart';
+import 'package:mychat_app/Searchpage/upload_Page.dart';
+import 'package:mychat_app/screens/chat.dart';
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
 
 class Tags_page extends StatelessWidget {
   const Tags_page({Key? key}) : super(key: key);
@@ -18,7 +24,11 @@ class Tags_page extends StatelessWidget {
             children: [
         // Top box for uploading photo
         Container(
+<<<<<<< HEAD
         padding: EdgeInsets.all(60),
+=======
+        padding: EdgeInsets.all(20),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
         margin: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
         decoration: BoxDecoration(
             color: Color(0xff392467),
@@ -27,6 +37,7 @@ class Tags_page extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
+<<<<<<< HEAD
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -36,6 +47,32 @@ class Tags_page extends StatelessWidget {
           ],
         ),
         ),
+=======
+        child: Column(
+          children: [
+            SizedBox(height: 10),
+            Container(
+              padding: EdgeInsets.all(12),
+              margin: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Search'),
+                  Icon(Icons.search),
+                ],
+              ),
+            ),
+
+          ],
+        ),
+      ),
+      // Search bar
+
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
 
 
       // tags you follow
@@ -47,8 +84,12 @@ class Tags_page extends StatelessWidget {
               color: Color(0xff392467),
               fontFamily: 'fonta',
               fontWeight: FontWeight.bold,
+<<<<<<< HEAD
           ),
         ),
+=======
+          ),),
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
       ),
       // List of boxes horizontally
       Container(
@@ -454,7 +495,11 @@ class Tags_page extends StatelessWidget {
           ),
         ],
       ),
+<<<<<<< HEAD
       ],
+=======
+    ],
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
         ),
       ),
 
@@ -529,7 +574,10 @@ class Tags_page extends StatelessWidget {
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'dart:io';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:file_picker/file_picker.dart';
@@ -55,10 +56,24 @@ class _HomePageState extends State<upload_Page> with SingleTickerProviderStateMi
     super.initState();
   }
 
+=======
+import 'package:flutter/material.dart';
+import 'package:mychat_app/Searchpage/Tags_page.dart';
+import 'package:mychat_app/Searchpage/chatPage.dart';
+import 'package:mychat_app/Searchpage/feed_page.dart';
+import 'package:mychat_app/Searchpage/account_Page.dart';
+import 'package:lottie/lottie.dart';
+
+
+
+class upload_Page extends StatelessWidget {
+  const upload_Page({Key? key});
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -166,6 +181,42 @@ class _HomePageState extends State<upload_Page> with SingleTickerProviderStateMi
           ],
         ),
       ),
+=======
+backgroundColor: Color(0xffA367B1),
+    body: Center(
+    child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Container(
+        width: 300,
+        height: 300,
+        margin: EdgeInsets.symmetric(horizontal: 0, vertical: 40),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          image: DecorationImage(
+            image: AssetImage('assets/images/ae12.png'),
+            fit: BoxFit.cover,
+          ),
+          borderRadius: BorderRadius.circular(25),
+        ),
+    ),
+    SizedBox(height: 5),
+    Text('"Share your style, shape your story. Post and shine!"',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+      fontSize: 23,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+      fontFamily: 'trajan',
+    ),),
+      SizedBox(height: 40),
+      UploadBox(),
+    ],
+    ),
+    ),
+
+
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
 
       bottomNavigationBar: BottomNavigationBar(
         items: const [
@@ -231,5 +282,37 @@ class _HomePageState extends State<upload_Page> with SingleTickerProviderStateMi
     );
   }
 }
+<<<<<<< HEAD
 
 
+=======
+class UploadBox extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        width: 200, // Adjust width according to your design
+        height: 100, // Adjust height according to your design
+        decoration: BoxDecoration(
+          color: Color(0xff5D3587),
+        border: Border.all(
+          color: Color(0xffFFD1E3),
+        width: 1.0,
+        style: BorderStyle.solid, // Dotted border style
+    ),
+    borderRadius: BorderRadius.circular(8.0), // Adjust border radius as needed
+    ),
+    child: Center(
+    child: Text(
+    'Upload Here',
+    style: TextStyle(
+    fontSize: 19,
+    fontWeight: FontWeight.bold,
+        fontFamily: 'fonta',
+        color: Color(0xffFFD1E3),
+    ),
+    ),
+    ),
+    );
+    }
+}
+>>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736

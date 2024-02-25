@@ -1,21 +1,80 @@
 import 'package:flutter/material.dart';
 import 'package:mychat_app/Searchpage/Tags_page.dart';
-<<<<<<< HEAD
-import 'package:mychat_app/accountpage/account_Page.dart';
-=======
-import 'package:mychat_app/Searchpage/account_Page.dart';
->>>>>>> f8727b5a80ce104a265d0974d43e2f2274b0d736
+import 'package:mychat_app/Searchpage/chatPage.dart';
 import 'package:mychat_app/Searchpage/feed_page.dart';
 import 'package:mychat_app/Searchpage/upload_Page.dart';
 
-class chatPage extends StatelessWidget {
-  const chatPage({Key? key});
+class account_Page extends StatelessWidget {
+  const account_Page({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
+      body:  SingleChildScrollView(
+        child:Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+        // Top box for uploading photo
+        Container(
+        padding: EdgeInsets.all(10),
+        margin: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+        decoration: BoxDecoration(
+          color: Color(0xff392467),
+        ),
+        child: Column(
+          children: [
+            Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:[
+              Expanded(child:
+            Container(
+              width: 100,
+              height: 100,
+              margin: EdgeInsets.symmetric(horizontal: 0, vertical: 40),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                image: DecorationImage(
+                  image: AssetImage('assets/images/ae10.png'),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(55),
+              ),
+        ),
+      ),
+        IconButton(
+               icon: Icon(Icons.settings
+               ,color: Colors.white,),
+               onPressed: () {
+                // Add functionality for settings here
+              },
+            ),
+          ],
+            ),
+            // Add the account name or text
+            Text(
+              'Sakshi Meena',
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontFamily: 'trajan',
+              ),
+            ),
+            SizedBox(height: 4), // Add some space between elements
+            // Add the text for followers and following
+            Text(
+              'Followers: 100  Following: 200',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white,
+              ),
+            ),
+  ],
+      ),
+      ),
+      ],
+        ),
+      ),
 
       bottomNavigationBar: BottomNavigationBar(
         items: const [
